@@ -1,4 +1,4 @@
-# IBM-Applied-Data-Science-Capston
+# IBM-Applied-Data-Science-Capstone
 
 Final course in the IBM Data Science Professional Certificate and the Applied Data Science with Python Specialization.
 
