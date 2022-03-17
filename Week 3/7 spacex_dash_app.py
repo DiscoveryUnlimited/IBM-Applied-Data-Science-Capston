@@ -71,13 +71,13 @@ def scatter(input1, input2):
         new_df = spacex_df
         new_df2 = new_df[new_df["Payload Mass (kg)"] >= input2[0]]
         new_df3 = new_df2[new_df["Payload Mass (kg)"] <= input2[1]]
-        fig2 = px.scatter(new_df3, y="class", x="Payload Mass (kg)", color="Booster Version Category")
+        fig2 = px.scatter(new_df3, y="class", x="Payload Mass (kg)", color="Booster Version Category", title='Success Payload Scatter Chart')
     else:
         new_df = spacex_df[spacex_df["Launch Site"] == input1]
         new_df2 = new_df[new_df["Payload Mass (kg)"] >= input2[0]]
         new_df3 = new_df2[new_df["Payload Mass (kg)"] <= input2[1]]
         #new_df2 = new_df[new_df["Payload Mass (kg)"] >= input2[0] & new_df["Payload Mass (kg)"] <= input2[1]]
-        fig2 = px.scatter(new_df3, y="class", x="Payload Mass (kg)", color="Booster Version Category")
+        fig2 = px.scatter(new_df3, y="class", x="Payload Mass (kg)", color="Booster Version Category", title='Success Payload Scatter Chart')
     return fig2
 
 
